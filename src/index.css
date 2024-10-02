@@ -1,13 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-box {
+  position: relative;
+  padding: 20px;
 }
+
+.custom-box-start::before, .custom-box-last::before {
+  content: "";
+  position: absolute; 
+  border: 2px solid #facc15;
+  color: #fff;
+  top: 0;  
+  width: 100%;
+  height: 100%;  
+  z-index: -1;
+}
+.custom-box-start::before{
+  transform: skew(326deg, 0deg);
+  left: 24px;
+}
+.custom-box-last::before{
+  transform: skew(34deg, 0deg);
+  left: -25px;
+}
+.header-top{
+  clip-path: polygon(0 0, 100% 0, 89% 100%, 12% 100%);
+}
+.custom-middle {
+  clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
+}
+.mode li{
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.mode li:hover{
+  color: #ffffff;
+}
+.mode li:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  top: 2px;
+  left: 7px;
+  background: #000;
+}
+.header-top li{
+  font-size: 1.6rem;
+}
+.mode li:nth-child(4):after, .mode li:nth-child(1):after {
+  display: none; 
+}
+.overflow-auto::-webkit-scrollbar{
+display: none;
+}
+@media only screen and (max-width: 600px) {
+  .header-top li{
+    font-size: 1.2rem;
+  }
+  .mode li{
+    font-size: 12px;
+    padding: 8px;
+  }
+  .mode li:after{
+    width: 30px;
+    height: 2px;
+    top: 0px;
+    left: 0px;
+  }
+  .custom-box, .custom-middle{
+    padding: 4px;
+    font-size: 14px;
+  }
+  .bottom-7.fixed{
+    left: 0;
+  }
+}
+
+.carousel-image {
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content:
+}
+
+.swiper-slide-active .carousel-image {
+  transform: scale(1.1); 
+  z-index: 1; 
+}
+
+.swiper-slide {
+  opacity: 0.6; 
+}
+
+.swiper-slide-active {
+  opacity: 1; 
+}
+.carousel-image {
+  width: 100%;
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.carousel-image.zoom {
+  transform: scale(2); /* Scale up the middle image */
+}
+
