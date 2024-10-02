@@ -25,7 +25,6 @@ const ImageCarousel = () => {
         centeredSlides={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
-        onSlideChange={(swiper) => console.log(swiper)}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
