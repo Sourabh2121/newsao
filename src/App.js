@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <div className="section-content bg-yellow-400 h-screen ps-3 md:ps-8 xl:ps-16 pr:3 md:pr-8 xl:pr-20">
+      <div className="section-content bg-yellow-500 h-screen ps-3 md:ps-8 xl:ps-16 pr:3 md:pr-8 xl:pr-20">
         <div className="flex items-center justify-between py-3">
           <h5 className="font-bold text-xl lg:text-3xl text-black">
             <span className="text-white">MOON</span>BOXES
@@ -39,7 +39,7 @@ function App() {
           </div>
         </div>
         <div className="absolute  left-1/2 top-12 transform translate-x-[-50%] z-20 ">
-          <ul className="flex items-center gap-2 lg:gap-5 justify-center py-3 bg-yellow-400 px-6 lg:px-16 header-top">
+          <ul className="flex items-center gap-2 lg:gap-5 justify-center py-3 bg-yellow-500 px-6 lg:px-16 header-top">
             <li id="wallet">
               <i className="bx bx-left-arrow-circle"></i>
               <ReactTooltip id="wallet" place="top" effect="solid">
@@ -97,7 +97,7 @@ function App() {
                     on MoonBoxes.io
                   </p>
                   <div className="mt-6 flex gap-7 items-center">
-                    <button className="bg-yellow-400 text-black font-bold text-sm rounded-full px-4 py-2">
+                    <button className="bg-yellow-500 text-black font-bold text-sm rounded-full px-4 py-2">
                       Buy a MoonBox
                     </button>
                     <a href="#secondDiv">
@@ -154,7 +154,7 @@ function App() {
                     <button className="border-b-2  border-yellow-500 text-white font-bold text-sm rounded-full px-4 py-2">
                       Contact Us
                     </button>
-                    <button className="bg-yellow-400 text-black font-bold text-sm rounded-full gap-2 px-4 py-2 flex items-center">
+                    <button className="bg-yellow-500 text-black font-bold text-sm rounded-full gap-2 px-4 py-2 flex items-center">
                       <i className="bx bx-file-blank text-2xl"></i>
                       <span className=""> Application Form</span>
                     </button>
@@ -171,7 +171,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="fixed bottom-0 right-0 h-screen border-l-2 border-stone-900 bg-yellow-400">
+        <div className="fixed bottom-0 right-0 h-screen border-l-2 border-stone-900 bg-yellow-500">
           <ul className="mode">
             <li>
               <i className="bx bx-wallet-alt text-2xl"></i>
