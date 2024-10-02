@@ -1,23 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/effect-cards";
 import "swiper/css/autoplay";
 import { EffectCards } from "swiper/modules"; // Correct import from swiper/modules
 
-const ImageCarousel = () => {
-  const images = [
-    "/1.png",
-    "/2.png",
-    "/3.png",
-    "/4.png",
-    "/10.png",
-    "/11.png",
-    "/12.png",
-  ];
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
+export default function App() {
   return (
-    <div className="py-8">
+    <>
       <Swiper
         effect={"cards"}
         grabCursor={true}
@@ -34,8 +28,6 @@ const ImageCarousel = () => {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
-};
-
-export default ImageCarousel;
+}
