@@ -135,7 +135,7 @@ const Products = () => {
                                     <div className="imag-product overflow-hidden mb-2">
                                       <img
                                         // src={product.image}
-                                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/r2ko7dyjdwtxg8i5rt16"
+                                        src="https://b.zmtcdn.com/data/pictures/3/18691153/39911fc41d8d2e9059ac2f22ffcbf3be.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                                         alt={product.name}
                                         className="card-img-top"
                                       />
