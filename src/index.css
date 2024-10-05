@@ -73,8 +73,12 @@ padding: .4rem 1.4rem;
   .card-title{
     font-size: 14px;
   }
-  .w-sm-100{
+  .header-section .w-sm-100{
     width: 100%!important;
+  }
+  .nav.nav-pills{
+    overflow: auto;
+    flex-wrap: nowrap;
   }
 }
 .viewCard{
@@ -82,4 +86,7 @@ padding: .4rem 1.4rem;
   left: 50%;
   transform: translateX(-50%);
   bottom: 3rem;
+}
+.navbar-toggler-icon{
+  filter: invert(1);
 }
